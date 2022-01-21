@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Facebook</title>
+</head>
+<body>
+    <div class="container">
+        <div class="intro">
+            <img class="logo" src="./facebook_new.svg" alt="Facebook logo">
+            <h2>O Facebook ajuda você a se conectar e compartilhar 
+            com as pessoas que fazem parte da sua vida.</h2>
+        </div>
+        <div class="loginContainer">
+           <form>
+                <input type="text" placeholder="Email ou telefone">
+                <input type="password" placeholder="Senha">
+                <button class="entrar">Entrar</button>
+                <a href="#">Esqueceu a senha?</a>
+                <!-- href em button? não, cursor: pointer, o link em si é javascript -->
+                <button class="novaConta">Criar nova conta</button>
+            </form>
+            <p><a href="#">Criar uma Página</a> para uma celebridade, 
+            uma marca ou uma empresa.</p> 
+        </div>
+    </div>
+    <footer>Meta © <span id="year">0</span></footer> <!-- há um caractere invisivel-->
+
+    <!-- Spript para atualizar o ano automaticamente -->
+    <script>
+        const year = document.getElementById('year');
+        const currentYear = new Date();
+
+        year.innerHTML = currentYear.getUTCFullYear()
+    </script>
+</body>
+</html>
